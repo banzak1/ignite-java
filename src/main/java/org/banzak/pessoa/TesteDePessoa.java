@@ -4,20 +4,22 @@ import org.banzak.pessoa.Pessoa;
 public class TesteDePessoa {
 
         public static void main(String[] args) {
-            Pessoa pessoa = new Pessoa();
-            pessoa.cpf = "01808657578";
-            pessoa.nome = "Leonardo";
-            pessoa.idade = 26;
+            Professor professor = new Professor();
+            professor.setCpf("01808657578");
+            professor.setNome("Leonardo");
+            professor.setIdade(26);
+            professor.setSalario(50000);
 
 
-            System.out.println(pessoa.imprimirDadosDaPessoa());
+            System.out.println(professor.imprimirDadosDaPessoa());
 
+            Aluno aluno = new Aluno();
+            aluno.setCpf("12568948960");
+            aluno.setNome("Jessica");
+            aluno.setIdade(25);
+            aluno.setMatricula("587559");
 
-            Pessoa pessoa2 = new Pessoa();
-            pessoa2.cpf = "01808657578";
-            pessoa2.nome = "Jessica";
-            pessoa2.idade = 25;
+            System.out.println(aluno.imprimirDadosDaPessoa());
 
-            System.out.println(pessoa2.imprimirDadosDaPessoa());
         }
     }
